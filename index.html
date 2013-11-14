@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+<script type="text/javascript">
+
+var text = "";
+var count = 0;
+var maxspeed = 200;
+
+text = "salut ce mai faci? e sunt bine!"
+
+$(document).ready(function(e) {
+
+	
+	function character( start, end, text){
+		return text.substring(start, end);
+	}
+	
+    function type(){
+		var random = Math.floor(Math.random() * maxspeed);
+		setTimeout(type, random);
+		$('#eu').append(character(count, count+1, text));
+		count++;
+	}
+	
+
+	type();
+	
+	$("footer").delay(6000).fadeIn(500);
+
+});
+
+</script>
+
+<style type="text/css">
+body {
+	font-family:"Courier New", Courier, monospace;
+	height:100%;
+	width:100%;
+}
+footer { 
+	position: absolute;
+	bottom: 2em;
+	left: 0;
+	right: 0;
+	text-align: left;
+	display:none;
+}
+small {
+	padding: 2em 0 0;
+	line-height: 1.3em;
+	margin: 0 9em;
+	display: block;
+	opacity: 0.6;
+	border-top: 1px solid #e9e9e9;
+	-webkit-transition:opacity 100ms ease-in-out;
+	-moz-transition:opacity 100ms ease-in-out;
+	transition:opacity 100ms ease-in-out;
+}
+small:hover { 
+	opacity: 1;
+}
+footer a {
+	color: #ea002a;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="eu"></div>
+
+<footer>
+<small>Razvan Florescu tel. 0746050955 // Facebook <a href="http://facebook.com/razvan.florescu" rel="external">Razvan Florescu</a> // Twitter: <a rel="external" href="https://twitter.com/razvanef">@razvanef</a> // Wordpress: <a href="http://razvanef.wordpress.com" rel="external">razvanef.wordpress.com</a> // Tumblr: <a href="http://graitor.tumblr.com" rel="external">Grăi Tor</small>
+</footer>
+
+</body>
+</html>
