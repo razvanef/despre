@@ -4,11 +4,35 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 
+<link type="text/css" rel="stylesheet" href="style.css" />
+
+<style type="text/css">
+#test {
+	width:600px;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	background:url(pattern-9jws.png) repeat;
+	padding-top:20px;
+}
+#vid {
+	margin:auto;
+	width:420px;
+	height:315;
+}
+</style>
+
+<script type="text/javascript">var switchTo5x=false;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "4842ab9b-cfbf-4c5e-93a0-90e5e1658d86", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
 
 
 </head>
 
 <body>
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -18,7 +42,57 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-comments" data-href="http://razvanef.tumblr.com" data-width="500" data-numposts="5" data-colorscheme="dark"></div>
+
+	<div id="sidebar">
+			<div id="logo"><a href="#"><img src="logokissfm.jpg"/></a></div>
+		<div id="meniu">
+		<ul style="list-style:none">
+			<li class="active"><a href="index.html">Acasa</a></li>
+			<li><a href="form.html">Inscriere</a></li>
+			<li><a href="video.html">Cele mai votate</a></li>
+			<li><a href="video.html">Cele mai noi</a></li>
+			<li><a href="despre.html">Despre</a></li>
+		</ul>
+        </div>
+	</div>
+    
+    <div id="test">
+    <div id="vid">
+    	<embed
+			width="420" height="345"
+			src="http://www.youtube.com/v/Mq-SBVn3yeY"
+			type="application/x-shockwave-flash">
+		</embed>
+    </div>
+     <div id="social">
+    	<div class="starRate">
+			<div>Voteaza!<br /></div>
+				<ul>
+					<li><a href="#"><span>Give it 5 stars</span></a></li>
+					<li><a href="#"><span>Give it 4 stars</span></a></li>
+					<li><a href="#"><span>Give it 3 stars</span><b></b></a></li>
+					<li><a href="#"><span>Give it 2 stars</span></a></li>
+					<li><a href="#"><span>Give it 1 star</span></a></li>
+				</ul>
+    	</div>
+        <div id="share">
+        		<span class='st_facebook_large' displayText='Facebook'></span>
+				<span class='st_twitter_large' displayText='Tweet'></span>
+				<span class='st_googleplus_large' displayText='Google +'></span>
+				<span class='st_pinterest_large' displayText='Pinterest'></span>
+				<span class='st_email_large' displayText='Email'></span>
+         </div>
+         <div class="fb-comments" data-href="http://example.com/comments" data-width="500" data-numposts="5" data-colorscheme="dark"></div>
+     </div>
+
+
+
+</div>
+   
+
+<footer>
+Copyright AdviceStudents 2013
+</footer>    
 
 </body>
 </html>
